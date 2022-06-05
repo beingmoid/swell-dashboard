@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+   </head>
+   <body>
+     <table>
+        <tr id="catRow">
+          <td id="cats">cats</td>
+        </tr>
+        <tr id="catRow2">
+          <td id="cats">cats</td>
+        </tr>
+        <tr id="dogRow">
+          <td id="dogs">dogs</td>
+        </tr>
+        <tr id="birdRow">
+          <td id="birds">birds</td>
+        </tr>
+        <tr>
+          <td id="dogRow2">dogs</td>
+        </tr>
+        </table>
+                        <select id="selectFilter">
+                        <option id="sel_All">Select...</option>
+                        <option id="selCats">Cats</option>
+                        <option id="selDogs">Dogs</option>
+                        <option id="selBirds">Birds</option>
+                        </select>
+
+
+    
+              <script type='text/javascript'> 
+                            $(window).load(function(){
+                             $('select').change(function() {
+                        
+                          if($('#selectFilter option:selected').attr('id') == "sel_All" || $('#selectFilter option:selected').attr('id') == "sel_All"){$('#catRow').show();$('#catRow2').show();$('#dogRow').show();$('#dogRow2').show();$('#birdRow').show();}
+                        
+                          if($('#selectFilter option:selected').attr('id') == "selCats" || $('#selectFilter option:selected').attr('id') == "selCats"){$('#catRow').show();$('#catRow2').show();$('#dogRow').hide();$('#dogRow2').hide();$('#birdRow').hide();}
+                        
+                          if($('#selectFilter option:selected').attr('id') == "selDogs" || $('#selectFilter option:selected').attr('id') == "selDogs"){$('#catRow').hide();$('#catRow2').hide();$('#dogRow').show();$('#dogRow2').show();$('#birdRow').hide();}
+                        
+                          if($('#selectFilter option:selected').attr('id') == "selBirds" || $('#selectFilter option:selected').attr('id') == "selBirds"){$('#catRow').hide();$('#catRow2').hide();$('#dogRow').hide();$('#dogRow2').hide();$('#birdRow').show();}
+                             }
+               </script>
+     </body>
+
+</html>

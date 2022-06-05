@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../production/images/1.png" type="image/ico" />
+
+    <title>Swell Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+    <!-- bootstrap-progressbar -->
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <!-- <div class="navbar nav_title" style="border: 0;">
+                        <a href="index.html" class="site_title mt-4"><img src="../production/images/logo.png"></a>
+                    </div>
+
+                    <div class="clearfix"></div> -->
+
+                    <!-- menu profile quick info -->
+                    <!-- <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>John Doe</h2>
+              </div>
+            </div> -->
+                    <!-- /menu profile quick info -->
+<!-- 
+                    <br /> -->
+
+                    <!-- sidebar menu -->
+                    <div id="col-md-12 sidebar-menu" class="main_menu_side hidden-prints main_menu nav1">
+                        <div class="col-md-12 navbar nav_title float-left pt-4" style="border: 0;">
+                          <a href="index.html" class="site_title "><img src="../production/images/logo.png"></a>
+                        </div>
+            
+                        <div class="col-md-12 menu_section px-0 mt-5 ">
+            
+                          <ul class="nav side-menu">
+                            <li>
+                              <a href="index.html" class="font-semi-bold "><i class="fa fa-home"></i> Home </a>
+                            </li>
+                            <li>
+                              <a href="campaign1.html" class="font-semi-bold"><i class="fa fa-edit"></i> Campaigns</a>
+                            </li>
+                            <li>
+                              <a href="collaborations.html" class="font-semi-bold"><i class="fa fa-desktop"></i> Collaborations</a>
+                            </li>
+                            <li>
+                              <a href="creators.html " class="font-semi-bold active"><i class="fa fa-table"></i> Creators </a>
+                            </li>
+                            <li>
+                              <a href="analytics.html" class="font-semi-bold"><i class="fa fa-bar-chart-o"></i>Analytics</a>
+                            </li>
+                            <li>
+                              <a href="payments.html" class="font-semi-bold"><i class="fa fa-clone"></i>Payments</a>
+                            </li>
+                            <li>
+                              <a href="settings.html" class="font-semi-bold"><i class="fa fa-bug"></i> Settings</a>
+                          </ul>
+                          <a><button type="button" class=" btn btn-bg btn-bdr mt-5 font-semi-bold">Create New Campaign</button></a>
+            
+                        </div>
+            
+            
+                      </div>
+                    <!-- /sidebar menu -->
+
+                    <!-- /menu footer buttons -->
+                    <!-- <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div> -->
+                    <!-- /menu footer buttons -->
+                </div>
+            </div>
+            <div class="mobile-container">
+              <!-- Top Navigation Menu -->
+             <div class="topnav">
+                   <div id="myLinks">
+                    <ul class="nav side-menu">
+                      <li>
+                        <a href="index.html" class="font-semi-bold active"><i class="fa fa-home"></i> Home </a>
+                      </li><br>
+                      <li>
+                        <a href="campaign1.html" class="font-semi-bold"><i class="fa fa-edit"></i> Campaigns</a>
+                      </li><br>
+                      <li>
+                        <a href="collaborations.html" class="font-semi-bold"><i class="fa fa-desktop"></i> Collaborations</a>
+                      </li><br>
+                      <li>
+                        <a href="creators.html " class="font-semi-bold"><i class="fa fa-table"></i> Creators </a>
+                      </li><br>
+                      <li>
+                        <a href="analytics.html" class="font-semi-bold"><i class="fa fa-bar-chart-o"></i>Analytics</a>
+                      </li><br>
+                      <li>
+                        <a href="payments.html" class="font-semi-bold"><i class="fa fa-clone"></i>Payments</a>
+                      </li><br>
+                      <li>
+                        <a href="settings.html" class="font-semi-bold"><i class="fa fa-bug"></i> Settings</a>
+                    </ul>
+                    <a><button type="button" class=" btn btn-bg btn-bdr mt-5 font-semi-bold">Create New Campaign</button></a>
+                   </div>
+                   <a href="javascript:void(0);" class="icon" onclick="myFunction_mobile()">
+                      <i class="fa fa-bars"></i>
+                   </a>
+             </div>
+      
+              <!-- End smartphone / tablet look -->
+           </div>
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu py-3">
+
+                    <nav class="nav navbar-nav">
+                        <ul class=" navbar-right">
+                            <li class="nav-item dropdown open" style="padding-left: 15px;">
+                                <a href="javascript:;" class="user-profile dropdown-toggle color-font-box"
+                                    aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="../production/images/profile.png" alt="">John Doe
+                                </a>
+                                <div class="dropdown-menu dropdown-usermenu pull-right"
+                                    aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="javascript:;"> Profile</a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <span class="badge bg-red pull-right">50%</span>
+                                        <span>Settings</span>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">Help</a>
+                                    <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out pull-right"></i>
+                                        Log Out</a>
+                                </div>
+                            </li>
+
+                            <li role="presentation" class="nav-item dropdown open">
+                                <div class="float-left mr-3">
+                                    <a href="javascript:;" class="dropdown-toggle info-number mr-2" id="navbarDropdown1"
+                                    data-toggle="dropdown" aria-expanded="false">
+                                    <img src="../production/images/bell.png">
+                                    <span class="badge btn-bg mrgn-r ">6</span>
+                                  </a>
+                                  <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+                                    <li class="nav-item">
+                                      <a class="dropdown-item">
+                                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                        <span>
+                                          <span>John Smith</span>
+                                          <span class="time">3 mins ago</span>
+                                        </span>
+                                        <span class="message">
+                                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                                        </span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="dropdown-item">
+                                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                        <span>
+                                          <span>John Smith</span>
+                                          <span class="time">3 mins ago</span>
+                                        </span>
+                                        <span class="message">
+                                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                                        </span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="dropdown-item">
+                                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                        <span>
+                                          <span>John Smith</span>
+                                          <span class="time">3 mins ago</span>
+                                        </span>
+                                        <span class="message">
+                                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                                        </span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="dropdown-item">
+                                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                        <span>
+                                          <span>John Smith</span>
+                                          <span class="time">3 mins ago</span>
+                                        </span>
+                                        <span class="message">
+                                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                                        </span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <div class="text-center">
+                                        <a class="dropdown-item">
+                                          <strong>See All Alerts</strong>
+                                          <i class="fa fa-angle-right"></i>
+                                        </a>
+                                      </div>
+                                    </li>
+                                </ul>
+                                  </div>
+                                  <div class="float-left li-div-bdr pl-3">
+                                    <a href="javascript:;" class="dropdown-toggle info-number mr-3" id="navbarDropdown2"
+                                    data-toggle="dropdown" aria-expanded="false">
+                                    <img src="../production/images/message.png">
+                                    <span class="badge btn-bg mr ">2</span>
+                                    </a>
+                                    <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown2">
+                                        <li class="nav-item">
+                                          <a class="dropdown-item">
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span>
+                                              <span>John Smith</span>
+                                              <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                              Film festivals used to be do-or-die moments for movie makers. They were where...
+                                            </span>
+                                          </a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="dropdown-item">
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span>
+                                              <span>John Smith</span>
+                                              <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                              Film festivals used to be do-or-die moments for movie makers. They were where...
+                                            </span>
+                                          </a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="dropdown-item">
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span>
+                                              <span>John Smith</span>
+                                              <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                              Film festivals used to be do-or-die moments for movie makers. They were where...
+                                            </span>
+                                          </a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="dropdown-item">
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span>
+                                              <span>John Smith</span>
+                                              <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                              Film festivals used to be do-or-die moments for movie makers. They were where...
+                                            </span>
+                                          </a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <div class="text-center">
+                                            <a class="dropdown-item">
+                                              <strong>See All Alerts</strong>
+                                              <i class="fa fa-angle-right"></i>
+                                            </a>
+                                          </div>
+                                        </li>
+                                    </ul>
+                                  </div>
+                                <!-- <ul class="dropdown-menu list-unstyled msg_list" role="menu"
+                                    aria-labelledby="navbarDropdown1">
+                                    <li class="nav-item">
+                                        <a class="dropdown-item">
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were
+                                                where...
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item">
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were
+                                                where...
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item">
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were
+                                                where...
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item">
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were
+                                                where...
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <div class="text-center">
+                                            <a class="dropdown-item">
+                                                <strong>See All Alerts</strong>
+                                                <i class="fa fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul> -->
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+
+            <!-- page content -->
+            <div class="right_col bg-index " id="creators" role="main">
+                <div class="col-md-12 text-left">
+                    <h1 class="color-font-box font-semi-bold36">Creators</h1>
+                    <div class="row">
+                        <div class=" col-md-12 card-group mb-5  text-center">
+                            <div class="col-md-3 mt-5 mb-5">
+                                <div class="bg-white">
+                                <img src="../production/images/Ellipse 30.png" class="card-img-top sss" alt="">
+                                <div class="card-body pt-0 mt-2">
+                                    <h5 class="card-title font-medium18 color-font-box">Jenyll Jefferson</h5>
+                                    <p class="card-text font-medium mb-1">Lifestyle, Fitness</p>
+                                    <p class="mb-1">
+                                          <small class="text-muted font-regular12 ">Instagram, Facebook, Tik Tok</small><br>
+                                    </p>  
+                                    <p>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span><span class="font-medium11"> (5)</span>
+                                    </p>
+                                    <a href="campaign2.html" class="btn btn-primary px-3">View Profile</a>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-md-3 mt-5 mb-5 ">
+                                <div class="bg-white">
+                                <img src="../production/images/Ellipse 31.png" class="card-img-top sss" alt="">
+                                <div class="card-body pt-0 mt-2">
+                                    <h5 class="card-title font-medium18 color-font-box">Jenyll Jefferson</h5>
+                                    <p class="card-text font-medium mb-1">Food</p>
+                                    <p class="mb-1">
+                                        <small class="text-muted font-regular12 ">Instagram, Facebook, Tik Tok</small><br>
+                                    </p>
+                                    <p>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span><span class="font-medium11"> (5)</span>
+                                    </p>
+                                    <a href="campaign2.html" class="btn btn-primary px-3">View Profile</a>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mt-5 mb-5 ">
+                                <div class="bg-white">
+                                <img src="../production/images/Ellipse 32.png" class="card-img-top sss" alt="">
+                                <div class="card-body pt-0 mt-2">
+                                    <h5 class="card-title font-medium18 color-font-box">Jenyll Jefferson</h5>
+                                    <p class="card-text font-medium mb-1">Travel, Lifestyle</p>
+                                    <p class="mb-1">
+                                        <small class="text-muted font-regular12">Instagram, Facebook, Tik Tok</small><br>
+                                    </p>
+                                    <p>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span><span class="font-medium11"> (5)</span>
+                                    </p>
+                                    <a href="campaign2.html" class="btn btn-primary px-3">View Profile</a>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mt-5 mb-5">
+                                <div class="bg-white">
+                                <img src="../production/images/Ellipse 33.png" class="card-img-top sss" alt="">
+                                <div class="card-body pt-0 mt-2">
+                                    <h5 class="card-title font-medium18 color-font-box">Jenyll Jefferson</h5>
+                                    <p class="card-text font-medium mb-1">Makeup, Clothing</p>
+                                    <p class="mb-1">
+                                        <small class="text-muted font-regular12">Instagram, Facebook, Tik Tok</small><br>
+                                    </p>
+                                    <p>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span><span class="font-medium11"> (5)</span>
+                                    </p>
+                                     <a href="campaign2.html" class="btn btn-primary px-3">View Profile</a>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mt-5 mb-5">
+                                <div class="bg-white">
+                                <img src="../production/images/Ellipse 34.png" class="card-img-top sss" alt="">
+                                <div class="card-body pt-0 mt-2">
+                                    <h5 class="card-title font-medium18 color-font-box">John Smith</h5>
+                                    <p class="card-text font-medium mb-1">Lifestyle,  Fitness</p>
+                                    <p class="mb-1">
+                                      <small class="text-muted font-regular12">Instagram, Facebook, Tik Tok</small><br>
+                                   </p>
+                                   <p>
+                                       <span class="fa fa-star checked font-medium11"></span>
+                                       <span class="fa fa-star checked font-medium11"></span>
+                                       <span class="fa fa-star checked font-medium11"></span>
+                                       <span class="fa fa-star checked font-medium11"></span>
+                                       <span class="fa fa-star checked font-medium11"></span><span class="font-medium11"> (5)</span>
+                                  </p>
+                                    <a href="campaign2.html" class="btn btn-primary px-3">View Profile</a>
+                                </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-3 mt-5 mb-5 ">
+                                <div class="bg-white">
+                                <img src="../production/images/Ellipse 35.png" class="card-img-top sss" alt="">
+                                <div class="card-body pt-0 mt-2">
+                                    <h5 class="card-title font-medium18 color-font-box">John Smith</h5>
+                                    <p class="card-text font-medium mb-1">Food</p>
+                                    <p class="mb-1">
+                                         <small class="text-muted font-regular12">Instagram, Facebook, Tik Tok</small><br>
+                                    </p>
+                                    <p>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span><span class="font-medium11"> (5)</span>
+                                    </p>
+                                     <a href="campaign2.html" class="btn btn-primary px-3">View Profile</a>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3  mt-5 mb-5">
+                                <div class="bg-white">
+                                <img src="../production/images/Ellipse 36.png" class="card-img-top sss" alt="">
+                                <div class="card-body pt-0 mt-2">
+                                    <h5 class="card-title font-medium18 color-font-box">Jenyll Jefferson</h5>
+                                    <p class="card-text font-medium mb-1">Travel, Lifestyle</p>
+                                    <p class="mb-1">
+                                        <small class="text-muted font-regular12">Instagram, Facebook, Tik Tok</small><br>
+                                    </p>
+                                    <p>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span><span class="font-medium11"> (5)</span>
+                                    </p>
+                                    <a href="campaign2.html" class="btn btn-primary px-3">View Profile</a>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mt-5 mb-5">
+                                <div class="bg-white">
+                                <img src="../production/images/Ellipse 37.png" class="card-img-top sss" alt="">
+                                <div class="card-body pt-0 mt-2">
+                                    <h5 class="card-title font-medium18 color-font-box">Kylie Ray</h5>
+                                    <p class="card-text font-medium mb-1">Makeup, Clothing</p>
+                                    <p class="mb-1">
+                                        <small class="text-muted font-regular12">Instagram, Facebook, Tik Tok</small><br>
+                                    </p>
+                                    <p>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span><span class="font-medium11"> (5)</span>
+                                    </p>
+                                    <a href="campaign2.html" class="btn btn-primary px-3">View Profile</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-5 mb-5">
+                                <div class="bg-white">
+                                <img src="../production/images/Ellipse 38.png" class="card-img-top sss" alt="">
+                                <div class="card-body pt-0 mt-2">
+                                    <h5 class="card-title font-medium18 color-font-box">John Smith</h5>
+                                    <p class="card-text font-medium mb-1 ">Lifestyle, Fitness</p>
+                                    <p class="mb-1">
+                                        <small class="text-muted font-regular12">Instagram, Facebook, Tik Tok</small><br>
+                                    </p>
+                                    <p>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span><span class="font-medium11"> (5)</span>
+                                    </p>
+                                    <a href="campaign2.html" class="btn btn-primary px-3">View Profile</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-5 mb-5">
+                                <div class="bg-white">
+                                <img src="../production/images/Ellipse 39.png" class="card-img-top sss" alt="">
+                                <div class="card-body pt-0 mt-2">
+                                    <h5 class="card-title font-medium18 color-font-box">Jenyll Jefferson</h5>
+                                    <p class="card-text font-medium mb-1">Food</p>
+                                    <p class="mb-1">
+                                        <small class="text-muted font-regular12">Instagram, Facebook, Tik Tok</small><br>
+                                    </p>
+                                      <p>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span><span class="font-medium11"> (5)</span>
+                                      </p>
+                                    <a href="campaign2.html" class="btn btn-primary px-3">View Profile</a>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mt-5 mb-5">
+                                <div class="bg-white">
+                                <img src="../production/images/Ellipse 40.png" class="card-img-top sss" alt="">
+                                <div class="card-body pt-0 mt-2">
+                                    <h5 class="card-title font-medium18 color-font-box">John Smith</h5>
+                                    <p class="card-text font-medium mb-1">Travel, Lifestyle</p>
+                                    <p class="mb-1">
+                                        <small class="text-muted font-regular12">Instagram, Facebook, Tik Tok</small><br>
+                                    </p>
+                                    <p>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span><span class="font-medium11"> (5)</span>
+                                    </p>
+                                    <a href="campaign2.html" class="btn btn-primary px-3">View Profile</a>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mt-5 mb-5">
+                                <div class="bg-white">
+                                <img src="../production/images/Ellipse 41.png" class="card-img-top sss" alt="">
+                                <div class="card-body pt-0 mt-2">
+                                    <h5 class="card-title font-medium18 color-font-box">Jenyll Jefferson</h5>
+                                    <p class="card-text font-medium mb-1">Makeup, Clothing</p>
+                                    <p class="mb-1">
+                                        <small class="text-muted font-regular12">Instagram, Facebook, Tik Tok</small><br>
+                                    </p>
+                                      <p>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span>
+                                        <span class="fa fa-star checked font-medium11"></span><span class="font-medium11"> (5)</span>
+                                      </p>
+                                    <a href="campaign2.html" class="btn btn-primary px-3">View Profile</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- cards -->
+
+
+
+                <!-- /cards -->
+            </div>
+
+
+
+
+            <!-- jQuery -->
+            <script src="../vendors/jquery/dist/jquery.min.js"></script>
+            <!-- Bootstrap -->
+            <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- FastClick -->
+            <script src="../vendors/fastclick/lib/fastclick.js"></script>
+            <!-- NProgress -->
+            <script src="../vendors/nprogress/nprogress.js"></script>
+            <!-- Chart.js -->
+            <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+            <!-- gauge.js -->
+            <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
+            <!-- bootstrap-progressbar -->
+            <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+            <!-- iCheck -->
+            <script src="../vendors/iCheck/icheck.min.js"></script>
+            <!-- Skycons -->
+            <script src="../vendors/skycons/skycons.js"></script>
+            <!-- Flot -->
+            <script src="../vendors/Flot/jquery.flot.js"></script>
+            <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+            <script src="../vendors/Flot/jquery.flot.time.js"></script>
+            <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+            <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+            <!-- Flot plugins -->
+            <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+            <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+            <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+            <!-- DateJS -->
+            <script src="../vendors/DateJS/build/date.js"></script>
+            <!-- JQVMap -->
+            <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
+            <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+            <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+            <!-- bootstrap-daterangepicker -->
+            <script src="../vendors/moment/min/moment.min.js"></script>
+            <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+            <!-- Custom Theme Scripts -->
+            <script src="../build/js/custom.min.js"></script>
+
+          <!-- // mobile-menu-function -->
+          <script>
+
+            function myFunction_mobile() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
+  
+  
+</body>
+
+</html>
